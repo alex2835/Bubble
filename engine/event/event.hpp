@@ -1,5 +1,7 @@
 #pragma once
 
+#include "event/key_codes.h"
+
 namespace Bubble
 {
    enum EventType
@@ -8,9 +10,15 @@ namespace Bubble
       KeyEvent
    };
 
+   
+
    struct Event
    {
-
       EventType Type;
+      union
+      {
+         
+      };
+      
    };
 }

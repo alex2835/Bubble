@@ -5,7 +5,7 @@ add_compile_options(/O0 /w /MP)
 set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_COMMAND} -E time")
 
 add_subdirectory(editor)
-#add_subdirectory(engine/core)
+add_subdirectory(engine)
 
 add_subdirectory(dependencies/glew)
 add_subdirectory(dependencies/glfw)

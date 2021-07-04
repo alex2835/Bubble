@@ -12,8 +12,14 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON
 )
 
-target_link_directories(BubbleEditorApp PUBLIC ${GLEW_INCLUDE_DIRS})
-include_directories(PROJECT_SOURCE_DIR/dependencies/glfw/include)
+target_link_libraries(BubbleEditorApp BubbleEngine)
 
-target_link_libraries(BubbleEditorApp libglew_static)
-target_link_libraries(BubbleEditorApp glfw ${GLFW_LIBRARIES})
+target_include_directories(BubbleEditorApp PUBLIC
+    ${CMAKE_SOURCE_DIR}/engine/application
+)
+
+# temp 
+target_include_directories(BubbleEditorApp PUBLIC
+   ${CMAKE_SOURCE_DIR}/dependencies/glfw/include
+   ${CMAKE_SOURCE_DIR}/dependencies/glew/include
+)
