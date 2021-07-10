@@ -9,8 +9,8 @@ add_subdirectory(engine)
 
 add_subdirectory(dependencies/glew)
 add_subdirectory(dependencies/glfw)
+add_subdirectory(dependencies/nativefiledialog)
+add_subdirectory(dependencies/stb_image)
 
-#add_subdirectory(dependencies/nativefiledialog)
 #add_subdirectory(dependencies/spdlog)
 #add_subdirectory(dependencies/imgui)
-#add_subdirectory(dependencies/stb_image)

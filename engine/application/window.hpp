@@ -7,6 +7,8 @@
 using std::literals::operator""sv;
 using std::literals::operator""s;
 
+#include "event.hpp"
+
 class GLFWwindow;
 
 namespace Bubble

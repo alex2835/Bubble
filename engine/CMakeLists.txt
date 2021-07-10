@@ -17,8 +17,11 @@ target_include_directories(BubbleEngine PUBLIC
    ${CMAKE_SOURCE_DIR}/dependencies/glew/include
    ${GLEW_INCLUDE_DIRS}
 
+   ${CMAKE_CURRENT_SOURCE_DIR}
+   ${CMAKE_CURRENT_SOURCE_DIR}/event
    ${CMAKE_CURRENT_SOURCE_DIR}/application
 )
 
 target_link_libraries(BubbleEngine libglew_static)
 target_link_libraries(BubbleEngine glfw ${GLFW_LIBRARIES})
+

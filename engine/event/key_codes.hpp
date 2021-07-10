@@ -2,13 +2,8 @@
 
 namespace Bubble
 {
-	using KeyCode = uint16_t;
-	
-	namespace Key
-	{
-		enum : KeyCode
+		enum KeyCode : uint16_t 
 		{
-			// From glfw3.h
 			Space               = 32,
 			Apostrophe          = 39, /* ' */
 			Comma               = 44, /* , */
@@ -140,5 +135,4 @@ namespace Bubble
 			RightSuper          = 347,
 			Menu                = 348
 		};
-	}
 }

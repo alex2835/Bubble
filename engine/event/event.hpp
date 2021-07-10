@@ -1,23 +1,25 @@
 #pragma once
 
-#include "event/key_codes.h"
-
+#include "mouse_event.hpp"
+#include "key_event.hpp"
+#include "window_event.hpp"
 namespace Bubble
 {
-   enum EventType
+   enum class EventType : uint8_t
    {
       MouseEvent,
-      KeyEvent
+      KeyEvent,
+      WindowEvent
    };
-
-   
 
    struct Event
    {
       EventType Type;
       union
       {
-         
+         MouseEvent Mouse;
+         KeyEvent Key;
+         WindowEvent Window;
       };
       
    };
